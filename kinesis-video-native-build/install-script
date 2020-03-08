@@ -225,7 +225,7 @@ if [[ $build_gst_artifact == TRUE ]]; then
       echo "libffi lib not found. Installing"
       if [ ! -f $DOWNLOADS/libffi-3.2.1.tar.gz ]; then
         cd $DOWNLOADS
-        $SYS_CURL -L "https://sourceware.org/ftp/libffi/libffi-3.2.1.tar.gz" -o "libffi-3.2.1.tar.gz"
+        $SYS_CURL -L "https://www.mirrorservice.org/sites/sourceware.org/pub/libffi/libffi-3.2.1.tar.gz" -o "libffi-3.2.1.tar.gz"
       fi
       cd $DOWNLOADS
       tar -xvf libffi-3.2.1.tar.gz
